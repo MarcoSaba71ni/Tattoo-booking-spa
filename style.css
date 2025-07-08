@@ -1,4 +1,6 @@
-.index-body {
+/* Initial Page */
+
+.hero {
     margin: 0;
     min-height: 100vh;
     background-image: url("images/Emi\'s\ top\ img\ 2.jpeg");
@@ -7,11 +9,11 @@
     background-position: center;
 }
 
-.header-txt {
+.header-hero {
     padding-top: 139px;
 }
 
-.header-txt h1 {
+.header-hero h1 {
     color: #D9D9D9;
     text-align: center;
     font-family: Manrope;
@@ -22,8 +24,9 @@
     margin: 0;
 }
 
-.header-txt h2, 
-.main-txt h2{
+.header-hero h2, 
+.hero-content h2,
+.btn-div h2{
     color: #FFF;
     text-align: center;
     font-family: Manrope;
@@ -34,21 +37,209 @@
     margin: 0;
 }
 
-.main-txt {
+.hero-content {
     padding-top: 239px;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* center horizontally */
-    justify-content: center;  /* if you want vertical centering too */
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    gap: 0.5rem; /* optional: small gap if needed */
+    gap: 0.5rem; 
 }
 
 .book-cta {
     width: 220px;
     height: 87px;
+    color: white;
     flex-shrink: 0;
     border-radius: 6px;
     background: rgba(168, 112, 72, 0.70);
+}
+
+
+.info,
+.message,
+.booking {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header-info,
+.header-booking,
+.header-message {
+    width: 393px;
+    height: 79px;
+    flex-shrink: 0;
+    background-color: rgba(217, 217, 217, 0.30);
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+
+.heading-booking {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.heading-booking h2 {
+    color: hsl(0, 0%, 0%);
+    font-family: Manrope;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.header-info h2,
+.main-info label,
+.header-message h2,
+.header-booking h2 {
+    color: #000;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+/* Info Page */
+
+.main-info label {
+    align-self: flex-start;
+    padding-top: 0.5rem;
+    padding-left: calc((100% - 308px) / 2); 
+    font-family: Manrope;
+    font-size: 20px;
+    color: #000;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; 
+    padding: 2rem;
+}
+
+.input {
+    align-items: center;
+    width: 308px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #D9D9D9;
+}
+
+.describe-input {
+    width: 308px;
+    height: 123px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #D9D9D9;
+}
+
+.btn-div {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Confirmation Page*/
+
+.main-message,
+.div-message {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-message h2 {
+    width: 373px;
+    color: #000;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.623%; 
+    padding-top: 89px;
+}
+
+.main-message h3 {
+    width: 354px;
+    color: #000;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.623%; 
+    padding-top: 51px;
+}
+
+.message-content {
+    width: 354px;
+    color: #8B8A8A;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.message-content h3 {
+    margin: 0;
+    padding-left: 29px;
+}
+
+.div-message h2 {
+    width: 336px;
+    color: #000;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 68px;
+}
+
+/*Booking Page */
+
+.calendar {
+    padding-top: 55px;
+}
+
+.weekdays h3 {
+    color: #8B8A8A;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.days-month h3 {
+    color: #000;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.weekdays,
+.days-month {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: .25rem;   
+  text-align: center; 
 }
 
