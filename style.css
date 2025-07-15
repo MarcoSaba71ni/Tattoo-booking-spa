@@ -25,8 +25,7 @@
 }
 
 .header-hero h2, 
-.hero-content h2,
-.btn-div h2{
+.hero-content h2{
     color: #FFF;
     text-align: center;
     font-family: Manrope;
@@ -36,6 +35,19 @@
     line-height: normal;
     margin: 0;
 }
+
+.btn-div h2{
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+
 
 .hero-content {
     padding-top: 239px;
@@ -218,6 +230,10 @@
     padding-top: 55px;
 }
 
+.arrows {
+    padding: 10px 0 0 10px;
+}
+
 .weekdays h3 {
     color: #8B8A8A;
     font-family: Manrope;
@@ -227,7 +243,8 @@
 }
 
 
-.days-month h3 {
+.days-month h3,
+.date-time h3 {
     color: #000;
     font-family: Manrope;
     font-size: 20px;
@@ -235,11 +252,23 @@
     font-weight: 400;
 }
 
+.date-time h3 {
+    padding: 5px 0;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
 .weekdays,
-.days-month {
+.days-month{
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: .25rem;   
   text-align: center; 
 }
 
+.date-time {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
